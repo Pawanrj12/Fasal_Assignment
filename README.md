@@ -13,17 +13,17 @@ This is a Movie library web application with the below features -
 
 Technical Details
 The application contains following features:
-•	It is of four-page application.
-•	Gives registration view.
-•	Allows new users to sign in (E-mail, password)
-•	Login view.
-•	Allows users to login with username and password.
-•	Main view.
-•	Search View.
-•	Displays favorite movie.
-•	Allows user to preview the details of the movie.
-•	Gives the option to save it into playlists.
-•	Allows users to remove a movie from their saved playlists.
-•	Saved playlist can either be public or private based on user choice.
-•	Provides buttons to log out.
-•	Used Bootstrap as a UI library for styling and responsiveness.
+1.	It is of four-page application.
+2.	Gives registration view.
+3.	Allows new users to sign in (E-mail, password)
+4.	Login view.
+5.	Allows users to login with username and password.
+6.	Main view.
+7.	Search View.
+8.	Displays favorite movie.
+9.	Allows user to preview the details of the movie.
+10.	Gives the option to save it into playlists.
+11.	Allows users to remove a movie from their saved playlists.
+12. Saved playlist can either be public or private based on user choice.
+13.	Provides buttons to log out.
+14. Used Bootstrap as a UI library for styling and responsiveness.
