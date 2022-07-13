@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.98.0">
-    <title>Login</title>
+    <title>Register with Cinema A to Z</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
 
@@ -34,6 +34,8 @@
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
+        background-color: #b93838;
+        background image: url('https://i.pinimg.com/originals/e4/a2/8f/e4a28fbe435eaa00fe28599b79505453.jpg');
 
       }
 
@@ -48,7 +50,6 @@
         background-color: rgba(0, 0, 0, .1);
         border: solid rgba(0, 0, 0, .15);
         border-width: 1px 0;
-        
         box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
       }
 
@@ -86,27 +87,36 @@
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/5.2/examples/sign-in/signin.css" rel="stylesheet">
   </head>
+  
   <body class="text-center" style="background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700323120.jpg');">
   
-<main class="form-signin w-100 m-auto">
-  {% for message in messages %}
-<p style="color: red;">{{message}}</p>
-{% endfor %}
+    <main class="form-signin w-100 m-auto">
+      {% for message in messages %}
+    <p style="color: red;">{{message}}</p>
+    {% endfor %}
   <form method="POST">{% csrf_token %}
-    <h1 class="h3 mb-3 fw-normal" style=font-color: #111111>Login</h1>
+    <h1 class="h3 mb-3 fw-normal" style="font-color:#b3ffb3">Get Registered with Cinema A to Z</h1>
 
+    <div class="form-floating">
+      <input type="text" name="first_name" class="form-control" id="floatingInput" placeholder="Name">
+      <label for="floatingInput">Name</label>
+    </div>
 
     <div class="form-floating">
       <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
       <label for="floatingInput">E-mail</label>
     </div>
     <div class="form-floating">
-      <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <input type="password" name="password1" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" name="password2" class="form-control" id="floatingPassword" placeholder="Password">
       <label for="floatingPassword">Password</label>
     </div>
 
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
-    <a href="/register">Register Now</a>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Register Now</button>
+    <a href="/login">Login</a>
   </form>
 </main>
 
